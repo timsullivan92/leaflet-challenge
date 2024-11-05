@@ -11,10 +11,6 @@ var geoLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     attribution: '&copy; <a href=https://www.openstreetmap.org/copyright>OpenStreetMap</a> contributors'
 })
 
-/*var topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-      attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-  });
-*/
 
 // base layers
 var baseLayers = {
@@ -97,16 +93,4 @@ legend.addTo(myMap)
 })
 
 
-// The link to get the tectonic plate boundaries data
-/*var tectonicURL = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
-
-d3.json(tectonicURL).then((tectData) => {
-    L.geoJSON(tectData, {
-        color: "rgb(255, 94, 0)",
-        weight: 2
-    }).addTo(tectLayer);
-
-    tectLayer.addTo(myMap);
-})
-*/
   
